@@ -1,3 +1,5 @@
+
+/* Using CSS Grid to layout the Nav elements */
 body {
     display: grid;
     height: 100vh;
@@ -7,6 +9,7 @@ body {
 
 header {
     grid-column: 1 / 4;
+    display: grid;
 }
 
 main {
@@ -25,26 +28,29 @@ footer {
 
 header nav {
     background-color: aqua;
-    display: grid;
-    grid-template-rows: 1fr;
-}
-
-h1, main, aside {
-    padding-left: 1rem;
 }
 
 header nav ul {
     list-style: none;
-    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    display: grid; 
+    grid-template: auto / repeat(4, 1fr);
+    align-items: center;
 }
 
 header nav li {
-    flex: 1 1 auto;
+    text-align: center;
+    display: inline;
+    padding: 1rem;
 }
 
 header nav a {
     text-decoration: none;
-    text-align: center;
+}
+
+h1, main, aside {
+    padding-left: 1rem;
 }
 
 header, footer {
@@ -55,5 +61,6 @@ header, footer {
 footer p {
     text-align: center;
     margin-top: 0;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
 }
