@@ -6,11 +6,20 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Your Name</title>
     <meta name="description" content=" I am Umaru Bayoh, a student at BYU. WDD 131 - Dynamic Web Fundamentals is one of the courses listed for the Web and Computer Programming Certificate. This is the first certificate of the bachelor degree program in Software Development. This online degree program is made avaible at the Brigham Young University - Idaho, in partnership with BYU Pathway Worldwide courtesy  the Church of Jesus Christ of Latter-day Saints' Educational System.'">
     <meta name="author" content="Umaru Bayoh">
+     <!-- Google Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+        <!--CSS Stylesheet -->
+        <link rel="stylesheet" href="styles/base.css">
+        <!-- JavaScripts -->
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <header>
+    <div class="wdd131-container">
+        <header>
         <span id="course-title">
-            <h1>WDD 131 - Dynamic Web Fundamentals - Umaru Bayoh</h1>
+            <h1>WDD 131 - Dynamic Web Fundamentals - <span id="student-name">Umaru Bayoh</span></h1>
         </span>
         <nav>
             <ul>
@@ -21,7 +30,43 @@
             </ul>
         </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <h1>Umaru Bayoh</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <aside class="aside-1">
+                <img src="images/profile_picture.webp" alt="author-picture" width="200" height="267">
+                <p>I am Umaru Bayoh, a student at BYU. WDD 131 - Dynamic Web Fundamentals is one of the courses listed for the Web and Computer Programming Certificate. This is the first certificate of the bachelor degree program in Software Development. This online degree program is made avaible at the Brigham Young University - Idaho, in partnership with BYU Pathway Worldwide courtesy  the Church of Jesus Christ of Latter-day Saints' Educational System.</p>
+            </aside>
+            <aside class="aside-2">
+                <h3>Freetown, Sierra Leone</h3>
+                <div class="aside-2-div">
+                    <figure>
+                     <img src="images/sierra-leone-flag.webp" alt="Sierra Leone Flag" width="200" height="133">
+                     <figcaption>Official Falg of Sierra Leone</figcaption>
+                </figure>
+                <p>Sierra Leone is a small, vibrant country located on the west coast of Africa, bordered by Guinea, Liberia, and the Atlantic Ocean. Its capital, Freetown, has historical significance as a settlement for freed slaves and is home to the iconic Cotton Tree. The country is rich in iron-ore, bauxite, diamonds. cocoa and coffee, etc. It has about 12 tribes. The country is divided into Western, North-West, South and Eastern Regions.</p>
+                </div>
+            </aside>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="#">Dev.to Community</a></li>
+                <li><a href="#">Smashing Magazinbe</a></li>
+                <li><a href="#">CSS Tricks</a></li>
+                <li><a href="#">W3 Schools</a></li>
+                <li><a href="#">Udemy</a></li>
+                <li><a href="#">Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+            <!-- Placeholder for current year -->
+            <p id="current-year"></p>
+            <!-- Placeholder for last modified date -->
+            <p id="last-modified"></p>
+    </footer>
+    </div>
 </body>
 </html>

@@ -8,8 +8,7 @@ body {
 }
 
 header {
-    grid-column: 1 / 4;
-    display: grid;
+    grid-column: 1 / 4;   
 }
 
 main {
@@ -36,12 +35,10 @@ header nav ul {
     padding: 0;
     display: grid; 
     grid-template: auto / repeat(4, 1fr);
-    align-items: center;
 }
 
 header nav li {
     text-align: center;
-    display: inline;
     padding: 1rem;
 }
 
