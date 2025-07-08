@@ -69,7 +69,7 @@ nav li a {
 }
 
 nav a:hover {
-    color: #faebd7;
+    background-color: var(--primary-color); 
 }
 
 /*-----Main Sections------*/
