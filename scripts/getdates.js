@@ -6,7 +6,7 @@ const lastModifiedDate = document.querySelector("#last-modified");
 const options = {year: "numeric"};
 
 // Inserting date into DOM
-currentYear.innerHTML = `<span>&copy; ${new Date().toLocaleDateString("en-UK", options)} <span class="bullet-point">&bull;</span> Umaru Bayoh &bull; Freetown &bull; Sierra Leone</span>`;
+currentYear.innerHTML = `&copy; ${new Date().toLocaleDateString("en-UK", options)} &bull; Umaru Bayoh &bull; Freetown &bull; Sierra Leone</span>`;
 
 // Set up the date format object for last modification date for toLocalDateString method
 
