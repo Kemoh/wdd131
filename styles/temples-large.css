@@ -1,0 +1,25 @@
+@media only screen and (min-width: 38rem) {
+        /* Navigation Styles */
+        header {
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Nav Element */
+        .hamburger {
+        display: none;  /* hide hamburger button element by default */
+    }
+
+        .navigation {
+        display: block; /* show nav element when it has a class of 'show' */
+    }
+
+        .navigation ul {
+        display: flex;  /* display the nav links horizontally */
+    }
+    
+        .navigation li {
+        flex: 1 1 100%;
+        }
+}

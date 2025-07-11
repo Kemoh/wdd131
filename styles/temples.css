@@ -1,0 +1,131 @@
+/* -----Color Schema----- */
+:root {
+    --primary-color: #00008b;
+    --secondary-color: #344055; 
+    --accent-1: #ffff00; 
+    --accent-2: #D81159; 
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 1rem 0;
+    color: var(--primary-color);
+}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* Navigation Styles */
+header {
+    display: grid;
+    grid-template-columns: auto 44px;
+    padding: .5rem 0;
+    align-items: end;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-color);
+}
+
+header span {
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #ffffff;
+}
+
+/* Hamburger Button */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    padding-bottom: 10px;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+/* Nav Element */
+.navigation {
+    display: none; /* Hide nav element in small view */
+}
+
+.navigation.show {
+    display: block; /* show nav element when it has a class of 'show' */
+    grid-column: 1 / 3;
+    
+}
+
+.navigation ul {
+    list-style-type: none;
+   
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: .8rem 10px;
+    text-align: center;
+}
+
+.navigation li.active {
+    background-color: var(--secondary-color);
+}
+
+.navigation a:hover {
+    background: lightblue;
+    color: var(--accent-2);
+    border-radius: 5px;
+}
+
+/* Main Styles */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.fig-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    place-items: center;
+}
+
+figcaption {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;  
+    margin-top: 1rem;
+    padding: 10px;
+}
+
+#current-year {
+    padding-bottom: 10px;
+}
+
+#last-modified {
+    color: var(--accent-1);
+    font-size: 14px;
+}
