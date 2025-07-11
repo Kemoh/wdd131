@@ -15,8 +15,13 @@
 
 h1 {
     font-family: 'Roboto', sans-serif;
-    text-align: center;
+    color: var(--primary-color);
+    color: #ffffff;
+}
+
+h2 {
     padding: 1rem 0;
+    text-align: center;
     color: var(--primary-color);
 }
 
@@ -28,16 +33,14 @@ body {
 header {
     display: grid;
     grid-template-columns: auto 44px;
-    padding: .5rem 0;
+    padding: 1rem;
     align-items: end;
     font-family: 'Roboto', sans-serif;
     background-color: var(--primary-color);
 }
 
 header span {
-    font-size: 1.5rem;
-    padding: 1rem;
-    color: #ffffff;
+    padding-left: 10px;
 }
 
 /* Hamburger Button */
@@ -46,7 +49,6 @@ header span {
     border: none;
     cursor: pointer;
     color: #ffffff;
-    padding-bottom: 10px;
     font-family: Verdana, 'Geneva', Tahoma, sans-serif;
 }
 
