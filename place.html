@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home Country: Sierra Leone</title>
+    <meta name="description" content="Explore the beauty, culture, and history of Sierra Leone — a country to live in, visit, or dream about.">
+    <meta name="author" content="Umaru Bayoh">
+    <!-- Google Fonts Links -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+    <!-- External CSS Files -->
+     <link rel="stylesheet" href="styles/place-small.css">
+     <link rel="stylesheet" href="styles/place-medium.css">
+     <link rel="stylesheet" href="styles/place-large.css">
+     <!-- JavaScript Files -->
+      <script src="scripts/getdates.js" defer></script>
+      <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Sierra Leone</h1>
+    </header>
+    <main>
+      <div class="hero"> 
+  <picture>
+    <!-- Large: 1000px and above -->
+    <source 
+      srcset="images/country_hero_large.webp" 
+      media="(min-width: 1000px)" 
+      sizes="100vw">
+
+    <!-- Medium: 500px to 999px -->
+    <source 
+      srcset="images/country_hero_medium.webp" 
+      media="(min-width: 500px)" 
+      sizes="100vw">
+
+    <!-- Small: below 500px -->
+    <img 
+      src="images/country_hero_small.webp" 
+      alt="Little Monkeys" 
+      width="425" 
+      height="597" 
+      loading="lazy" 
+      sizes="100vw">
+  </picture>
+</div>
+
+
+<section class="data">
+        <h2>Data</h2>
+        <dl>
+            <dt>Area:</dt>
+            <dd>71,740 km²</dd>
+
+            <dt>Population:</dt>
+            <dd>Approximately 8 million</dd>
+
+            <dt>Capital:</dt>
+            <dd>Freetown</dd>
+
+            <dt>Languages:</dt>
+            <dd>English (official), Krio, Mende, Temne, others</dd>
+
+            <dt>Currency:</dt>
+            <dd>Sierra Leonean Leone (SLL)</dd>
+
+            <dt>Time Zone:</dt>
+            <dd>Greenwich Mean Time (GMT)</dd>
+
+            <dt>Calling Code:</dt>
+            <dd>+232</dd>
+
+            <dt>Internet TLD:</dt>
+            <dd>.sl</dd>
+        </dl>
+</section>
+
+<section class="weather">
+        <h2>Weather <span class="weather-emoji">⛅</span></h2>
+            <img src="images/weather_icon.svg" alt="Weather Icon" width="150" height="150" loading="lazy">
+            <dl class="windchill-container">
+                <dt>Temperature:</dt>
+                <dd>10℃</dd>
+
+                <dt>Conditions:</dt>
+                <dd>Partly Cloudy</dd>
+
+                <dt>Wind:</dt>
+                <dd>5 km/h</dd>
+
+                <dt>Wind Chill:</dt>
+                <dd id="wind-chill"></dd>
+            </dl>
+        </section>
+    </main>
+    <footer>
+            <!-- Placeholder for current year -->
+            <p id="current-year"></p>
+            <!-- Placeholder for last modified date -->
+            <p id="last-modified"></p>
+    </footer>
+    
+</body>
+</html>
