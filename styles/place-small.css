@@ -20,11 +20,11 @@
 }
 
 body {
-    font-family: Oxygen, sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 
 h1, h2 {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header, .data, .weather, footer {
