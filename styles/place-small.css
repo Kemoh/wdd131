@@ -3,8 +3,8 @@
     --backgroundColor-2: #2A7A11;
      --accentColor-1: #3A5683;
     --accentColor-2: #76B041;
-    --headerFontFamily: Roboto, sans-serif;
-    --bodyFontFamily: Oxygen, sans-serif;
+    --headerFontFamily: 'Roboto', sans-serif;
+    --bodyFontFamily: 'Oxygen', sans-serif;
     --fontSizeSm: 1.2rem;
     --fontSizeMd: 1.6rem;
     --fontSizeLg: 2.1rem;
@@ -20,11 +20,11 @@
 }
 
 body {
-    font-family: 'Oxygen', sans-serif;
+    font-family: var(--bodyFontFamily);
 }
 
 h1, h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--headerFontFamily);
 }
 
 header, .data, .weather, footer {
