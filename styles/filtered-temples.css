@@ -1,0 +1,159 @@
+/* -----Color Schema----- */
+:root {
+    --primary-bg-color:#000080;
+    --secondary-bg-color: #2563eb; 
+    --body-bg-color: #f3f4f6;
+    --accent-1: #ffff00;  
+    --accent-2: #ff0000;
+    --accent-3:#3A5683;;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oxygen', sans-serif;
+    background-color: var(--body-bg-color);
+}
+
+/* Header section */
+header {
+    display: grid;
+    grid-template-columns: 1fr 45px;
+    align-items: end;
+    background-color: var(--primary-bg-color);
+}
+
+header span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff; 
+    padding: 5px 10px;
+    font-weight: 700;
+}
+
+/* Hamburger Button */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem 10px;
+}
+
+.hamburger::before {
+    content: "\2630";
+    color: #ffffff;
+    font-size: 2rem;
+    background-color: var(--primary-bg-color);
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+    color: var(--accent-2)
+}
+
+/* Navigation */
+.navigation {
+    display: none; /* Hide nav element in small view */
+    grid-row: 2/3;
+    grid-column: 1/4;
+}
+
+.navigation.show {
+    display: block; /* show nav element when it has a class of 'show' */
+}
+
+.navigation li {
+    list-style-type: none;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    padding: .8rem 10px;
+    color: #ffffff;
+    border: 1px solid var(--accent-3);
+}
+
+.navigation li.active a {
+    color: var(--accent-1);
+}
+
+.navigation a:hover {
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background: var(--primary-bg-color);
+}
+
+/* Main Section */
+/* main {
+    max-width: 800px;
+    margin: 0 auto;
+} */
+
+h1 {
+    padding: 0 10px;
+    padding-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-bg-color);
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-bg-color);
+}
+
+/* Temple Cards */
+.filtered-temples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 0 10px;
+    align-items: center;
+    place-items: center;
+}
+
+.filtered-temples-grid section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    background-color: #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.filtered-temples-grid .label {
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-bg-color);
+    color: #ffffff;
+    text-align: center;  
+    margin-top: 1rem;
+    padding: 10px;
+}
+
+#current-year {
+    padding-bottom: 10px;
+}
+
+#last-modified {
+    color: var(--accent-1);
+    font-size: 14px;
+}

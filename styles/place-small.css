@@ -44,6 +44,7 @@ header {
     display: block;
 }
 
+.hero picture,
 .hero img  {
     width: 100%;
     height: auto;

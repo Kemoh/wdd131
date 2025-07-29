@@ -1,0 +1,43 @@
+@media only screen and (min-width: 38rem) {
+    #ham-btn {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+     header, .navigation ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navigation li a {
+        border: none;
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+} /*END OF 608px */
+
+
+@media only screen and (min-width: 1024px) {
+    .navigation a {
+        padding: 0 1rem;
+        font-size: 25px;
+        padding: 1rem;
+    }
+
+    .filtered-temples-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+} /*END OF 1024px*/
+
+@media only screen and (min-width: 1200px) {
+
+}
+
