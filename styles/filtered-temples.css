@@ -34,7 +34,6 @@ header span {
     font-weight: 700;
     color: #ffffff; 
     padding: 5px 10px;
-    font-weight: 700;
 }
 
 /* Hamburger Button */
@@ -62,7 +61,7 @@ header span {
 .navigation {
     display: none; /* Hide nav element in small view */
     grid-row: 2/3;
-    grid-column: 1/4;
+    grid-column: 1/3;
 }
 
 .navigation.show {
