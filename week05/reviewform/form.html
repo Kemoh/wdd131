@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a product review form for our online market place.">
+    <meta name="author" content="Online Store">
+
+    <!-- Title of the document -->
+    <title>Project Review Form</title>
+
+    <!-- Google fonts links -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS stylesheet -->
+     <link rel="stylesheet" href="styles/form.css">
+
+     <!-- JavaScript -->
+      <script src="scripts/getdates.js" defer></script>
+      <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header><h1>Product Review</h1></header>
+
+    <main>
+        <form action="review.html" method="get" id="product-review-form" class="form-review" autocomplete="on">
+            <p>Fields that are marked with <strong>*</strong> are required.</p>
+
+            <label>Product Name*</label>
+                <select name="product"
+                id="product" required>
+                <!-- Default select -->
+                <option value="" disabled selected>Select a product... 
+                </option>
+                <!-- Dynamically create remaining options  here-->
+                </select>
+            
+            <label>Overall Rating*</label>
+                <!-- One star rating -->
+                <div class="star-rating">
+                <div class="stars">
+                <label>&star;</label>
+                    <input type="radio" id="star" name="rating" value="one-star" required>
+                </div>
+                
+                <!-- Two stars rating -->
+                <div class="stars">
+                <label>&star;&star;
+                </label>
+                <input type="radio" id="star" name="rating" value="two-stars" required>
+                </div>
+                
+                <!-- Three stars rating -->
+                <div class="stars">
+                <label>&star;&star;&star;
+                </label>
+                <input type="radio" id="star" name="rating" value="three-stars" required>
+                </div>
+                
+                 <!-- Four stars rating -->
+                <div class="stars">
+                <label>&star;&star;&star;&star;</label>
+                <input type="radio" id="star" name="rating" value="four-stars" required>
+                </div>
+               
+                 <!-- Five stars rating -->
+                <div class="stars">
+                <label>&star;&star;&star;&star;&star;
+                </label>
+                <input type="radio" id="star" name="rating" value="five-stars" required>
+                </div>   
+            </div>
+
+                <label>Date of Installation*
+                    <input type="date" id="date" name="date" required>
+                </label>
+           
+
+                <label>Useful Features*</label>
+                <p>Which features did you find useful in the product? <br> <span>(Check all that apply)</span></p>
+                
+                
+                <div class="features">
+                <!-- Durability -->
+                <label>
+                    <input type="checkbox" id="feature-1" name="durability" value="durability">Durability
+                </label>
+
+                <!-- Useability -->
+                <label>
+                    <input type="checkbox" id="feature-2" name="useability" value="useability">Useability
+                </label>
+
+                <!-- High Performance -->
+                 <label>
+                    <input type="checkbox" id="feature-3" name="performance" value="performance">High Performance
+                </label>
+
+                <!-- Water Proof -->
+                 <label>
+                    <input type="checkbox" id="feature-4" name="water-proof" value="water-proof">Water proof
+                 </label>
+                </div>
+
+                 <!-- Written Review -->
+                <label>Written Review</label>
+                <textarea name="written-review" id="written-review"></textarea>
+                
+               
+                <!-- User Name -->
+                <label>Your Name:
+                    <input type="text" id="name" name="fullname">
+                </label>
+                
+                <!-- Form Submission -->
+                 <input type="submit" value="Share My Review">
+        </form>
+    </main>
+
+    <footer>
+            <!-- Placeholder for current year -->
+            <p id="current-year"></p>
+            <!-- Placeholder for last modified date -->
+            <p id="last-modified"></p>
+    </footer>
+</body>
+</htm

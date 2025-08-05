@@ -14,7 +14,7 @@
     --accent4-color: #021A33;
     --accent5-color: #05437A;
     --body-font: 'Oxygen', sans-serif; 
-    --headings-font: 'Roboto', sans-serif;
+    --headings-font: 'Inter', sans-serif;
     --body-padding-sm: 10px;
     --body-padding-md: 14px;
     --body-padding-lg: 20px;
@@ -27,7 +27,7 @@
 }
 
 h1, h2, h3, header span {
-    font-family: 'Inter' sans-serif;
+    font-family: 'Oxygen', sans-serif;
     font-weight: 700;
 }
 
@@ -42,8 +42,9 @@ header {
 }
 
 header span {
-    font-family: 'Inter', sans-serif;
-    font-size: 2.5rem;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
     color: var(--tertiary-text-color);
 }
 
@@ -63,8 +64,9 @@ body {
 }
 
 p {
-    font-family: 'Oxygen' sans-serif;
+    font-family: 'Inter' sans-serif;
     padding: .5rem 0;
+    font-weight: 400;
     color: var(--primary-text-color);
 }
 
@@ -73,13 +75,13 @@ section {
 }
 
 footer {
-    font-family: 'Inter', sans-serif;
     padding: 1rem 0;
     background-color: var(--primary-color);
+    
    
 }
 
 footer p {
-    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
     color: var(--tertiary-text-color);
 }

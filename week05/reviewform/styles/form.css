@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #02182B;
+    --secondary-color: #d3d3d3;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open+Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+header,
+main, 
+footer {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+header, footer {
+	text-align: center;
+	background-color: var(--primary-color);
+	color: #ffffff;
+}
+
+h1, footer {
+    padding: 1rem 0;
+}
+
+main {
+	margin-bottom: 1rem;
+	background-color: var(--secondary-color);
+	border: 1px solid ;
+}
+
+.form-review {
+    padding: 1rem;
+}
+
+.form-review label {
+    display: block;
+    padding: .2rem 0;
+    color: #9c2c13;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.form-review select,
+.form-review textarea,
+.form-review input[type="radio"],
+.form-review input[type="date"],
+.form-review input[type="checkbox"],
+.form-review input[type="text"] {
+    margin-bottom: 1rem;
+}
+
+.form-review input[type="text"],
+.form-review input[type="date"],
+.form-review select,
+.form-review textarea {
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-review input[type="checkbox"] {
+    margin-right: 6px;
+} 
+
+.form-review input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #ffffff;
+    border-radius: 6px;
+    padding: .8rem;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.form-review input:required {
+    border-left: solid 5px red;
+}
+
+.form-review input:required:valid {
+    border-bottom: solid 8px greenyellow;
+}
+
+.star-rating {
+    display: grid;
+    grid-template-columns: repeat(5, .5fr);
+    justify-content: center;    
+}
+
+.star-rating label {
+    grid-row: 1/2;
+} 
+
+.star-rating input[type = "radio"]{
+	width: 24px;
+	height: 24px;
+	grid-row: 2/3;
+} 
+
+.form-review input[type="checkbox"] {
+	width: 24px;
+	height: 24px; 
+}
+
+.stars {
+    display: block;
+    text-align: center;
+    margin-right: 1rem;
+}
