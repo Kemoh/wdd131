@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra Property Hub - Home Page</title>
+    <meta name="description" content="Sierra Property Hub is a one-stop-shop where users can find a range of properties, access valuable information and connect with industry professionals.">
+    <meta name="author" content="Sierra Property Hub">
+
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles/propertysmall.css">
+    <link rel="stylesheet" href="styles/propertymedium.css">
+    <link rel="stylesheet" href="styles/propertylarge.css">
+
+    <!-- JavaScripts -->
+     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/recentlistings.js" type="module"></script>
+</head>
+<body> 
+    <header>
+        <!-- Company Logo -->
+         <img src="images/sierra-property-logo.svg" alt="Sierra Property Hub Logo" width="44" height="44">
+
+        <!-- Company Name -->
+        <span>Sierra Property Hub</span>
+
+        <!-- Hamburger Button -->
+        <button id="ham-btn" class="ham-menu" aria-label="Hamburger Button"></button>
+            
+        <!-- Navigation -->
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="first-li">
+                    <a  class="active" href="index.html">📍Home</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+
+                <li>
+                    <a href="property.html">Properties</a>
+                </li>       
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Start Hero Div -->
+        <div class="hero-property-container">
+             <!-- Hero Image -->
+            <picture>
+                <!-- Large: 1000px and above -->
+                <source 
+                srcset="images/sierra_property_hub_hero_large.webp 1500w" 
+                media="(min-width: 62.5rem)" sizes="100vw">
+
+                <!-- Medium: 38rem to 62.49rem -->
+                <source 
+                srcset="images/sierra_property_hub_hero_medium.webp 1000w" 
+                media="(min-width: 38rem)" 
+                sizes="100vw">
+
+                <!-- Small: below 38rem -->
+                <img 
+                src="images/sierra_property_hub_hero_small.webp" 
+                alt="Home Hero Small" 
+                width="320" 
+                height="320">
+            </picture>
+
+        </div>
+        <!-- End Hero Div -->
+
+        <!-- Start Main Section -->
+        <div class="home-container">
+            <h1>Home</h1>
+            <!-- Start Listings Section -->
+            <section class="carousel-wrapper">
+                <h2>Recent Listings</h2>
+                <div id="showlistings" class="carousel-track"></div>
+            </section>
+            <!-- End Listings Section -->
+
+            <!-- Start Purpose Section -->
+            <section class="purpose-links">
+                <h2>Find Your Property</h2>
+                <div class="link-buttons">
+                <a href="property.html" class="btn all">All</a>
+                <a href="property.html?purpose=Sale" class="btn sale">For Sale</a>
+                <a href="property.html?purpose=Rent" class="btn rent">For Rent</a>
+                <a href="property.html?purpose=Lease" class="btn lease">For Lease</a>
+                </div>
+            </section>
+            <!-- End Purpose Section -->
+
+             <!-- Start Why Choose Us Section -->
+            <section class="why-choose-us">
+                <h2>Why Choose Us?</h2>
+                <div class="reasons-container">
+                    <div class="reason-card">
+                        <h3>Trusted by Locals</h3>
+                        <p>We are deeply rooted in Sierra Leone, with a strong reputation for reliability and integrity in the local property market.</p>
+                    </div>
+
+                    <div class="reason-card">
+                    <h3>Wide Property Selection</h3>
+                    <p>Whether you're buying, renting, or leasing, we offer a diverse range of verified listings to match every need and budget.</p>
+                    </div>
+
+                    <div class="reason-card">
+                    <h3>Transparent & Secure</h3>
+                    <p>We ensure clear communication, fair pricing, and secure transactions — no hidden fees or surprises.</p>
+                    </div>
+
+                    <div class="reason-card">
+                    <h3>Local Expertise</h3>
+                    <p>Our team knows Freetown and the wider Sierra Leone market — giving you insights that save time and money.</p>
+                    </div>
+
+                    <div class="reason-card">
+                    <h3>Responsive Support</h3>
+                    <p>Our dedicated team is here to guide you every step of the way, from property search to final decision.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- End Why Choose Us Section -->
+
+
+            <!-- Start Newsletter Section -->
+             <section class="newsletter" aria-labelledby="newsletter-title"><div class="newsletter-content">
+                <h2 id="newsletter-title">Stay Updated with Sierra Property Hub</h2>
+                <p>Subscribe to our newsletter and be the first to hear about new listings, property tips, and exclusive offers.</p>
+                
+                <form method="get" action="subscribe.html" class="newsletter-form">
+                    <div class="form-group">
+                        <label for="first-name">First Name:</label>
+                        <input id="first-name" type="text" name="first" required autocomplete="given-name" title="Your First Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="last-name">Last Name:</label>
+                        <input id="last-name" type="text" name="last" required autocomplete="family-name" title="Your Last Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" name="email" required placeholder="john89@gmail.com" title="Your Email" autocomplete="email">
+                    </div>
+                    
+                    <button type="submit" class="btn-subscribe">Subscribe Me</button>
+                </form>
+            </div>
+        </section>
+
+            <!-- End Newsletter Section -->
+        </div>
+        <!-- End Main Section -->
+    </main>
+    
+    <footer>
+         <div>
+            <!-- Placeholder for current year -->
+            <p id="current-year"></p>
+            <!-- Placeholder for last modified date -->
+            <p id="last-modified"></p>
+         </div>
+    </footer> 
+</body>
+</html>

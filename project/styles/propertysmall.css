@@ -1,0 +1,493 @@
+/* Color Schema */
+:root {
+    --gutterSm: 0.4rem;
+    --gutterMd: 0.8rem;
+    --gutterLg: 1.6rem;
+    --gutterXl: 2.4rem;
+    --gutterXx: 7.2rem;
+    --fontSizeMd: 1.125rem;
+    --fontSizeLg: 1.25rem;
+    --bodyTextLineHeight: 1.8;
+    --accent1: #FFFFFF;
+    --accent2: #032B44; 
+    --accent3: #6c757d;
+    --accent4: #ffff00;
+    --accent5: #ff0000;
+    --accent6: #05437A;
+    --colorBorder1: #DDDDDD;
+    --colorSection: #DDDDDD;
+    --primary-color: #032B44;
+    --secondary-color: #2E865F;
+    --colorPrimary700: #333333;
+    --colorPrimary400: #666666;
+    --transitionDuration: 300ms;
+    --transitionTF: cubic-bezier(0.645, 0.045, 0.355, 1);
+    --bodyFontFamily: 'Roboto', sans-serif; 
+    --headingFontfamily: 'Oxygen', sans-serif;
+}
+
+
+/* CSS Reset for box sizing */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--bodyFontFamily);
+    line-height: var(--bodyTextLineHeight);
+}
+
+
+
+/* Start Header Section */
+header {
+	display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: end;
+    padding: var(--gutterSm);
+	background-color: var(--primary-color);
+}
+
+header span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color:var(--accent1);
+}
+
+.ham-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.ham-menu::before {
+    content: "\2630";
+    color: var(--accent1);
+    font-size: 2rem;
+}
+
+.ham-menu.show::before {
+    content: "\00D7";
+    font-size: 2.5rem;
+    color: var(--accent5);
+}
+
+.navigation {
+	grid-row: 2/3;
+	grid-column: 1/4;
+    display: none;  /* hide nav element by default */
+}
+
+.navigation.show {
+    display: block; /* show nav element when it has a class of 'show' */
+}
+
+.navigation li {
+    list-style-type: none;
+}
+
+.navigation a {
+    display: block;
+    padding: var(--gutterSm);
+    text-decoration: none;
+    color: var(--accent1);
+    border-top: 1px solid var(--colorBorder2);
+}
+
+.navigation a:hover {
+    border: 1px solid var(--accent1);
+    border-radius: 10px;
+    background: var(--primary-bg-color);
+}
+
+.first-li a {
+    color: var(--accent4);
+}
+
+/* End Header Section */
+
+
+
+/* Start Main section */
+
+h1, h2, h3, h4, header span {
+    font-weight: 700;
+    font-family: var(--headingFontfamily);
+}
+
+h1, h2, h3, h4 {
+    color: var(--primary-color);
+}
+
+h1 {
+    border-bottom: 1px solid var(--colorBorder1);
+}
+
+
+
+/* Sections Container */
+
+.hero-property-container picture {
+    display: block;
+}
+
+.hero-property-container picture,
+.hero-property-container img  {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.home-container, 
+.contact-container, 
+.property-container {
+    padding: var(--gutterSm);
+}
+
+.home-container {
+    margin-bottom: -2rem;
+}
+
+
+/* Start Current Listings */
+.carousel-wrapper {
+  /* width: 100%; */
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+
+
+/* Sections  */
+
+.carousel-wrapper, 
+.purpose-links, 
+.why-choose-us, 
+.newsletter, 
+.contact-info, 
+.appointment-content {
+ min-width: 100%; /* or a fixed width like 300px if preferred */
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  border: 1px solid var(--colorBorder1);
+  background-color: var(--colorSection);
+} 
+
+#showlistings section .label, 
+.form-group label, 
+.appointment-form label, 
+.property-grid .label, 
+.bookme .label, 
+.subscribeme .label {
+    font-weight: 700;
+}
+
+/* Shared Button Styles */
+.link-buttons .btn,  
+.btn-subscribe, 
+.appointmentbtn, 
+.property-grid button, .listingsbtn {
+  text-decoration: none;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--accent3);
+  color: var(--accent1);
+}
+
+
+#showlistings section,
+.purpose-links .link-buttons {
+    width: 100%;
+    height: auto;
+}
+/* End Current Listings */
+
+
+/* Start Purpose Section */
+h2 {
+   padding: 1rem 0;
+}
+
+/* Button Container */
+.link-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.link-buttons .btn.sale {
+  background-color: #218838;
+}
+
+.link-buttons .btn.rent {
+  background-color: #0069d9;
+}
+
+.link-buttons .btn.lease {
+  background-color: #6b5b29;
+}
+
+/* Hover Effects */
+.link-buttons .btn:hover, .more-details:hover, .reason-card:hover, .btn-subscribe:hover, .appointmentbtn:hover, .propertybtn:hover, .listingsbtn {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Section Buttons */
+.link-buttons .btn, .carousel-wrapper .btn, .btn-subscribe, .appointmentbtn, .propertybtn, .listingsbtn {
+    width: 100%;
+    text-align: center;
+}
+
+/* End Purpose Section */
+
+
+/* Start Why Choose Us Section */
+
+/* Container to hold the cards */
+.reasons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* Individual Reason Card Styling */
+.reason-card {
+  background-color: var(--accent1);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  overflow: hidden;
+}
+/* End Why Choose Us Section */
+
+
+
+/* Start Subscription Section */
+
+/* Newsletter Section */
+.newsletter-content, .appointment-content, .contact-info {
+    padding: 10px;
+}
+
+.newsletter-form, .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-form {
+   gap: 1rem;
+   text-align: left;
+}
+
+.form-group input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid var(--colorBorder1);
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.newsletter-content p, .contact-info p, .contact-info ul  {
+    padding-bottom: 1rem;
+    text-align: left;
+}
+
+.contact-info .label {
+    font-weight: 700;
+    color: #9c2c13;
+}
+
+/* End Subscription Section */
+
+
+/* Start Contact Us Form */
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.contact-info ul {
+    list-style: none;
+}
+
+.appointment-form label, .newsletter-form label {
+    display: block;
+    padding: 0 10px;
+    color: #9c2c13;
+    text-align: left; 
+    font-size: 1rem;
+}
+
+
+.newsletter-form input[type='text'],
+.appointment-form input[type="text"],
+.appointment-form input[type="date"],
+.appointment-form input[type="email"],
+.newsletter-form input[type="email"],
+.appointment-form input[type="tel"],
+.appointment-form select {
+    border: 1px solid var(--colorBorder1);
+    border-radius: 6px;
+    border-left-width: 5px;
+    border-left-color:#555;
+    font-size: 1rem;
+    padding: .75rem;
+    margin: .1rem 0 1rem 0;
+    width: 100%;
+    display: block;
+}
+
+.newsletter-form input:required:valid, .appointment-form input:required:valid,
+.appointment-form select {
+    border-bottom: solid 5px greenyellow;
+} 
+
+.appointment-form input[type = radio] {
+    vertical-align: middle;
+    margin-right: 6px;
+    width: 15px;
+    height: 15px;
+}
+
+.appointmentbtn {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.appointment-form h3 {
+    margin-top: 2rem;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+/* Map Section */
+.map {
+    text-align: center;
+    background: var(--colorSection);
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+/* End Contact Us Form */
+
+
+/* Start Properites Page */
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 0 10px;
+    margin-bottom: 1rem;
+    align-items: center;
+    place-items: center;
+}
+
+.property-grid section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    background-color: #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.property-grid img {
+    width: 100%;
+    height: auto;
+}
+
+
+.propertybtn {
+    margin-top: 1rem;
+}
+
+/* End Properties Page */
+
+
+/* End Main Section */
+
+
+
+
+
+/* Start Footer Section */
+footer {
+    padding: 1rem 10px;
+    background-color: var(--primary-color);
+}
+
+footer p {
+    text-align: center;
+    color: var(--accent1);
+    font-family: var(--bodyFontFamily);
+}
+
+footer #last-modified {
+    font-size: 14px;
+    color: var(--accent4);
+}
+/* End Footer Section */

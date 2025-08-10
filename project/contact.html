@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra Property Hub - Contact Page</title>
+    <meta name="description" content="Sierra Property Hub is a one-stop-shop where users can find a range of properties, access valuable information and connect with industry professionals.">
+    <meta name="author" content="Sierra Property Hub">
+
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles/propertysmall.css">
+    <link rel="stylesheet" href="styles/propertymedium.css">
+    <link rel="stylesheet" href="styles/propertylarge.css">
+
+    <!-- JavaScripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    
+</head>
+<body> 
+    <header>
+        <!-- Company Logo -->
+         <img src="images/sierra-property-logo.svg" alt="Sierra Property Hub Logo" width="44" height="44">
+
+        <!-- Company Name -->
+        <span>Sierra Property Hub</span>
+
+        <!-- Hamburger Button -->
+        <button id="ham-btn" class="ham-menu" aria-label="Hamburger Button"></button>
+            
+        <!-- Navigation -->
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="first-li">
+                    <a  class="active" href="index.html">📍Home</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+
+                <li>
+                    <a href="property.html">Properties</a>
+                </li>       
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+         <!-- Start Contact Form Section -->
+          <div class="contact-container">
+            <h1>Contact Us</h1>
+
+            <!-- Start Contact Info Section -->
+            <section class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>If you have any questions about buying, renting, or leasing property, we are here to help you.</p>
+                
+                <ul>
+                    <li><span class="label">Phone:</span> +232 76 123 456</li>
+                    <li><span class="label">Email:</span> info@sierrapropertyhub.com</li>
+                    <li><span class="label">Address:</span> 45 Wilkinson Road, Freetown, Sierra Leone.</li>
+                </ul>
+            </section>
+            <!-- End  Info Section -->
+
+            <!-- Start Appointment Form Section -->
+             <section class="appointment-form">
+                <div class="appointment-content">
+                    <h2>Appointment Form</h2>
+
+                    <form method="get"
+                        action="appointment.html" class="appointment-form">
+                        
+                        <!-- Name Fields -->
+                         <label for="first">
+                            First Name:</label>
+                            <input type="text" name="first" required autocomplete="given-name" 
+                            title="Your First Name" placeholder="First name" id="first">
+                        
+                        
+                        <label for="last">
+                            Last Name:</label>
+                            <input type="text" name="last" required autocomplete="family-name" 
+                            title="Your Last Name" placeholder="Last name" id="last">
+                        
+                        
+                        <!-- Email -->
+                         <label for="mail">
+                            Email:</label>
+                            <input type="email" name="email" required placeholder="john89@gmail.com"  
+                            title="Your Email" autocomplete="email" id="mail">
+                        
+                        
+                        <!-- Mobile Number -->
+                         <label for="phone">
+                            Mobile Number:</label>
+                            <input type="tel" name="phone" title="Phone number with country code" 
+                            autocomplete="tel" placeholder="+232-70-123-456" required id="phone">
+                        
+                        
+                        <!-- Property Type -->
+                         <h3>Select Property Type</h3>
+                         <label>
+                            <input type="radio" name="property-type" title="For Sale" value="Sale" checked required>For Sale
+                        </label>
+                        
+                        <label>
+                            <input type="radio" name="property-type" title="For Rent" value="Rent" required="Rent">For Rent
+                        </label>
+                        
+                        
+                        <label>
+                            <input type="radio" name="property-type" title="For Lease" value="Lease" required="Lease">For Lease
+                        </label>
+                        
+                        <!-- Appointment Date -->
+                         
+                        <h3>Select Appointment Date</h3>
+                        
+                        <label for="date">Date:</label>
+                            <input type="date" name="date" required id="date">
+                        
+
+                        <!-- Property Location -->
+                        <h3>Select Property Location</h3>
+                        
+                        <label for="location">Location: </label>
+                            <select
+                            name="location" title="Property Location" id="location" required>
+                                <option value="">None</option>
+                                <option value="Freetown">Freetown</option>
+                                <option value="Waterloo">Waterloo</option>
+                                <option value="Bo">Bo</option>
+                                <option value="Kenema">Kenema</option>
+                                <option value="Makeni">Makeni</option>
+                                <option value="Lungi">Lungi</option>
+                            </select>
+                       
+                        <!-- Submit Button -->
+                         <button type="submit" class="appointmentbtn">Shchedule My Appointment</button>
+                    </form>
+                </div>
+            </section>
+
+
+            <!-- Location Map -->
+            <section class="map">
+                <h2>Our Location</h2>
+                <div class="map-container">
+                    <iframe
+                    src="https://www.google.com/maps?q=Freetown,+Sierra+Leone&output=embed"
+                    allowfullscreen=""
+                    loading="lazy">
+                    </iframe>
+                </div>
+            </section>
+
+            <!-- End Appointment Form Section -->
+        </div>
+    </main>
+
+    <footer>
+        <!-- Current year -->
+        <div class="footer-paragraphs">
+            <!-- Placeholder for current year -->
+            <p id="current-year"></p>
+            <!-- Placeholder for last modified date -->
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

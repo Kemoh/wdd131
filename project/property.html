@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra Property Hub - Property Page</title>
+    <meta name="description" content="Sierra Property Hub is a one-stop-shop where users can find a range of properties, access valuable information and connect with industry professionals.">
+    <meta name="author" content="Sierra Property Hub">
+
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles/propertysmall.css">
+    <link rel="stylesheet" href="styles/propertymedium.css">
+    <link rel="stylesheet" href="styles/propertylarge.css">
+
+    <!-- JavaScripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/properties.js" type="module"></script>
+</head>
+<body> 
+    <header>
+        <!-- Company Logo -->
+         <img src="images/sierra-property-logo.svg" alt="Sierra Property Hub Logo" width="44" height="44">
+
+        <!-- Company Name -->
+        <span>Sierra Property Hub</span>
+
+        <!-- Hamburger Button -->
+        <button id="ham-btn" class="ham-menu" aria-label="Hamburger Button"></button>
+            
+        <!-- Navigation -->
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="first-li">
+                    <a  class="active" href="index.html">📍Home</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+
+                <li>
+                    <a href="property.html">Properties</a>
+                </li>       
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="property-container">
+            <h1>Properties</h1>
+
+            <!-- Start Property Section -->
+
+            <!-- Start Purpose Section -->
+            <section class="purpose-links">
+                <h2>Available Properties</h2>
+                <div class="link-buttons">
+                <a href="property.html" class="btn all">All</a>
+                <a href="property.html?purpose=Sale" class="btn sale">For Sale</a>
+                <a href="property.html?purpose=Rent" class="btn rent">For Rent</a>
+                <a href="property.html?purpose=Lease" class="btn lease">For Lease</a>
+                </div>
+            </section>
+
+            <div id="propertylistings" class="property-grid"></div>
+            <!-- End Property Section -->
+        </div>
+    </main>
+
+    <footer>
+        <!-- Current year -->
+        <div class="footer-paragraphs">
+            <!-- Placeholder for current year -->
+            <p id="current-year"></p>
+            <!-- Placeholder for last modified date -->
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

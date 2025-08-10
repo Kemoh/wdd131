@@ -1,0 +1,85 @@
+/* Medium: from 38rem up */
+@media only screen and (min-width: 38rem) {
+    :root {
+        --fontSizeMd: 1.125rem;
+    }
+    
+    header {
+          display: flex;
+          align-items: end;
+          position: relative;
+          font-size: var(--fontSizeMd);
+          
+        #ham-btn {
+        display: none;
+        }
+        
+        .navigation {
+            display: block;
+        }
+
+        .navigation ul {
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            text-align: center;
+            padding-right: 10px;
+        }
+    } 
+
+
+    .home-container {
+        padding: var(--gutterMd);
+
+        .carousel-track section {
+            min-width: 100%;
+            padding: 0 8rem;
+        }
+
+        .purpose-links {
+            padding: 1rem 8rem;
+        }
+    }
+
+    .contact-container {
+        padding: var(--gutterMd);
+    }
+
+    .property-container {
+        .purpose-links {
+            padding: 1rem 3rem;
+        }
+    }
+
+    footer {
+        font-size: var(--fontSizeMd);
+    }
+}
+
+
+@media only screen and (min-width: 48rem) {
+ 
+    header {
+        font-size: var(--fontSizeMd);
+
+          img {
+            width: 55px;
+            height: auto;
+        }
+    }
+
+
+    .home-container {
+        font-size: var(--fontSizeMd);
+        
+        .carousel-wrapper section img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    footer {
+        font-size: var(--fontSizeMd);
+    }
+}
