@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
         propertyContainer.innerHTML = '';
 
         const params = new URLSearchParams(window.location.search);
-        const purposeFilter = params.get('purpose');
+        const purposeFilter = params.get('purpose')?.toLowerCase();;
 
         const filteredProperties = purposeFilter
-            ? properties.filter(property => property.purpose === purposeFilter)
+            ? properties.filter(property => property.purpose.toLowerCase() === purposeFilter)
             : properties;
 
         filteredProperties.forEach(property => {
