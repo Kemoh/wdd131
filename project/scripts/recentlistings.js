@@ -20,7 +20,6 @@ function listingsCard() {
         let location = document.createElement('p');
         let photo = document.createElement('img');
         let recentlistingsBtn = document.createElement('button');
-        recentlistingsBtn.style.cursor = 'pointer';
        
         // Populate Elements
         name.textContent = list.title;
