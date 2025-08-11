@@ -211,6 +211,7 @@ h1 {
   border: none;
   background-color: var(--accent3);
   color: var(--accent1);
+  cursor: pointer;
 }
 
 
